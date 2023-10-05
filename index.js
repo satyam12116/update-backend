@@ -6,6 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const dataRoute = require("./routes/dataRoute");
 
+
 app.use(bodyParser.json());
 app.use(cors());
 app.use("/", dataRoute);
